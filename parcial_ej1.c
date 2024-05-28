@@ -35,20 +35,26 @@ int main() {
             scanf("%f", &sueldo);
         } while (sueldo < 0);
 
-        if (tolower(sector) == 'a') {
-            cont_administracion++;
-        }
+        switch (tolower(sector)) {
 
-        if (tolower(sector) == 'p') {
+        case 'a':
+            cont_administracion++;
+            break;
+        
+        case 'p':
             total_prod += sueldo;
             cont_prod++;
-        }
+            break;
 
-        if (tolower(sector) == 'c') {
+        case 'c': 
             cont_cap++;
+            break;
+
+        default:
+            break;
         }
 
-        if (band == 0 || sueldo > sueldo_alto) {
+        if (band == 0 || legajo > legajo_alto) {
             band = 1;
             legajo_alto = legajo;
             sueldo_alto = sueldo;
