@@ -80,6 +80,7 @@ int main() {
         printf("\nEl participante ganador es: #%d\nPuntos: %d\n\nCantidad de disparos en el centro de todos los participantes: %d", ganador, maxPuntos, sumCentros);
     }
 
+    return 0;
 }
 
 int Cuadrante(int x, int y) {
