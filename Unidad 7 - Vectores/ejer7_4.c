@@ -30,6 +30,7 @@ int compararVectores(int v1[5], int v2[5]) {
     for (int i = 0; i < 5; i++) {
         if(v1[i] != v2[i]) {
             flag = 1;
+            break;
         }
     }
 
