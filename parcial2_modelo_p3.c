@@ -19,20 +19,19 @@ d) Informar los vendedores que no registraron ventas durante el día
 */
 #include <stdio.h>
 
-int IngresoDatos(int[], float[]);
+int IngresoDatos(float[]);
 void MayorRecaudacion(float[]);
 void MenorRecaudacion(float[]);
 void VendedoresSinVentas(float[]);
 
 int main() {
-    int vecVendedor[20] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
     int cont = 0;
     int validar = 0;
     float vecVentas[20] = {0};
     float maxRecaudacion;
 
     do{
-        validar = IngresoDatos(vecVendedor, vecVentas);
+        validar = IngresoDatos(vecVentas);
         cont++;
     } while (validar == 0);
 
@@ -45,7 +44,7 @@ int main() {
     return 0;
 }
 
-int IngresoDatos(int v1[20], float v2[20]) {
+int IngresoDatos(float v2[20]) {
     int vendedor;
     float importe;
     do {

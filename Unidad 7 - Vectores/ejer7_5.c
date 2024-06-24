@@ -15,6 +15,7 @@ int main() {
     int codProductos[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     int unidadesProd[10] = {0};
     int validar = 0;
+    
     do {
         validar = Carga(codProductos, unidadesProd);
     } while (validar == 0);
