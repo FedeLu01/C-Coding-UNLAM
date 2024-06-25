@@ -95,7 +95,7 @@ float StockPromedio(int vCantidades[], int contador) {
         suma += vCantidades[i];
     }
     
-    promedio = (float)suma / contador;
+    promedio = (float)suma / (contador - 1);
     
     return promedio;
 }
