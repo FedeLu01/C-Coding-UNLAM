@@ -29,7 +29,7 @@ int main() {
     do {
         validar = IngresoDatos(vCodProducto, vCantidades, vCodRubro, contador);
         contador++;
-    } while (validar == 0);
+    } while (validar == 0 && contador != 1000);
 
     promedio = StockPromedio(vCantidades, contador);
 
@@ -42,7 +42,7 @@ int main() {
         printf("El promedio entre todos los productos es: %.2f\n", promedio);
 
         //punto c
-        MostrarDatos(vCantidades, vCodProducto);
+        MostrarDatos(vCantidades, vCodRubro);
     }
     
     return 0;
