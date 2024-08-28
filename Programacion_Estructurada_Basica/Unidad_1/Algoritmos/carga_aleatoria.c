@@ -4,28 +4,32 @@
 
 #define TAM 10
 
-void CargaAleatoria(int[], int, int);
-void Mostrar(int[], int);
+void CargaAleatorios(int[], int cant, int max);
+void Mostrar(int[], int cant);
 
-int main()
+int main() 
 {
-    int vec[TAM];
+    int vect[TAM];
     srand(time(NULL));
-    CargaAleatoria(vec, TAM, 100);
-    Mostrar(vec,TAM);
+    CargaAleatorios(vect, 10, 100);
+    Mostrar(vect, 10);
     return 0;
 }
 
-void CargaAleatoria(int v[], int ce, int max) 
+void CargaAleatorios(int v[], int cant, int max) 
 {
-    int i;
-    for (i = 0; i < ce; i++)
+    int i; 
+    for(i = 0; i < cant; i++) 
+    {
         v[i] = rand() % max;
+    }
 }
 
-void Mostrar(int v[], int ce) 
+void Mostrar(int v[], int cant) 
 {
     int i;
-    for (i = 0; i < ce; i++)
+    for(i = 0; i < cant; i++) 
+    {
         printf("%d\n", v[i]);
+    }
 }
