@@ -20,13 +20,9 @@ int Buscar(int v[], int cant, int dato)
     while (i < cant && pos == -1) 
     {
         if (v[i] == dato)
-        {
             pos = i;
-        }
-        else 
-        {
+        else
             i++;
-        }
     }
 
     return pos;
