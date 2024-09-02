@@ -59,6 +59,6 @@ void Carga(int v[], int ce)
     int i;
     for(i=0;i<ce;i++)
     {
-        v[i] = rand() % 100;
+        v[i] = rand() % 10;
     }
 }
